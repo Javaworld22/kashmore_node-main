@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET home page. */
+/* GET check for server working. */
 router.get('/check-service', function(req, res, next) {
   res.send('express');
 });

@@ -6,7 +6,7 @@ echo "0 * * * * /home/jigga.e10/kashmore_node/scripts/start.sh" >> /var/spool/cr
 
 responseMsg = wget http://localhost:3000/check-service
 
-if [[$responseMsg -eq "express"]]
+if [[$responseMsg -eq "express"]];
 then
     echo "Working ..."
 else
