@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/start.js"
+    "start": "node ./bin/start.js",
+    "dev": "DEBUG=kashmore-node:* npm start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

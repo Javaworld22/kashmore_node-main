@@ -1,0 +1,25 @@
+# [START cloudbuild_npm_node]
+steps:
+# Install dependencies
+- name: gcr.io/cloud-build/gcloud
+  args:
+  - compute
+  - ssh
+  - kashmore-1
+  - --project
+  - kashmore-web
+  - --zone
+  - us-central1-a
+  - --
+  - sudo apt update &&
+  - sudo apt install -y git &&
+  - sudo apt install -y nodejs &&
+  - sudo apt install -y npm &&
+  - sudo apt install -g -y pm2 &&
+  - git clone https://github.com/JiggaByter/kashmore_node.git &&
+  - cd kashmore_node &&
+  - npm install &&
+  - pm2 start ./scripts/serve.sh &&
+  - bash ./scripts/start.sh
+
+# [END cloudbuild_npm_node]
