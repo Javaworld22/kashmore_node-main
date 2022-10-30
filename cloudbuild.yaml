@@ -1,15 +1,15 @@
 # [START cloudbuild_npm_node]
 steps:
 # Install dependencies
-- name: gcr.io/cloud-build/gcloud
+- name: gcr.io/cloud-build/gcloud-slim
   args:
   - compute
   - ssh
-  - kashmore-1
+  - "kashmore-1"
   - --project
-  - kashmore-web
+  - "kashmore-web"
   - --zone
-  - us-central1-a
+  - "us-central1-a"
   - --
   - sudo apt update &&
   - sudo apt install -y git &&
