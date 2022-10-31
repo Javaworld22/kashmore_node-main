@@ -7,6 +7,6 @@ then
     echo "Working ...";
 else
     echo "Restarting ...";
-    sudo pm2 restart 0 && sudo pm2 start /home/jigga_e10/kashmore_node/scripts/serve.sh;
+    sudo -u jigga_e10 pm2 restart /home/jigga_e10/kashmore_node/scripts/serve.sh;
 
 fi

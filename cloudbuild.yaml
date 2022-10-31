@@ -26,9 +26,8 @@ steps:
   - cd kashmore_node &&
   - sudo cp configs/default /etc/nginx/sites-available/default &&
   - sudo npm install &&
+  - sudo npm uninstall -g pm2 &&
   - sudo npm install -g pm2 &&
-  - sudo -u jigga_e10 pm2 restart scripts/serve.sh &&
-  - sudo -u jigga_e10 pm2 stop scripts/serve.sh &&
   - sudo -u jigga_e10 pm2 start scripts/serve.sh &&
   - sudo bash scripts/start.sh
 
