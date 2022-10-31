@@ -18,7 +18,7 @@ steps:
   - sudo apt install -y nodejs &&
   - sudo apt install -y npm &&
   - sudo apt install -y nginx &&
-  - git clone https://github.com/JiggaByter/kashmore_node.git &&
+  - git clone https://jiggabyte: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@github.com/JiggaByter/kashmore_node.git &&
   - cd kashmore_node &&
   - sudo cp ./kashmore_node/configs/default /etc/nginx/sites-available/default &&
   - npm install &&
