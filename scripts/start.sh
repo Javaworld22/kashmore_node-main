@@ -1,15 +1,8 @@
 #! bin/bash
 
-servePM = sudo pm2 stop serve
+sudo pm2 stop serve || echo "serve not running ..."
 
-if [ $servePM -ne 0 ];
-then
-
-else
-
-fi
-
-sudo npm uninstall -g pm2 && sudo -u jigga_e10 pm2 start scripts/serve.sh
+sudo -u jigga_e10 pm2 start scripts/serve.sh
 
 sudo touch /var/spool/cron/jigga_e10# /usr/bin/crontab /var/spool/cron/jigga_e10
 
