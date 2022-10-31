@@ -1,8 +1,8 @@
 #! bin/bash
 
-responseMsg=`wget "http://34.69.107.214/check-service`;
+responseMsg=$(pm2 id serve);
 
-if [[$responseMsg -eq "express"]]
+if [[$responseMsg -ne "[]"]]
 then
     echo "Working ...";
 else

@@ -6,11 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET check for server working. */
-router.get('/check-service', function(req, res, next) {
-  res.send('express');
-});
-
 
 
 

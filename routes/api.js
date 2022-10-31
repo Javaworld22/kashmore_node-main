@@ -31,4 +31,9 @@ router.get('/check-rest', function(req, res, next) {
   res.send('jigga dog!');
 });
 
+/* GET check for server working. */
+router.get('/check-service', function(req, res, next) {
+  res.send('express');
+});
+
 module.exports = router;
