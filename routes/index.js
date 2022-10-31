@@ -11,4 +11,10 @@ router.get('/check-service', function(req, res, next) {
   res.send('express');
 });
 
+/* GET test. */
+router.get('/checkers', function(req, res, next) {
+  res.send('Checkers Galleria!');
+});
+
+
 module.exports = router;
