@@ -1,8 +1,8 @@
 #! bin/bash
 
-sudo pm2 stop serve || echo "Serve script not running ..."
+sudo -u jigga_e10 pm2 stop serve || echo "Serve script not running ..."
 
-sudo -u jigga_e10 pm2 start scripts/serve.sh
+sudo -u jigga_e10 pm2 start scripts/serve.sh --name serve
 
 sudo touch /var/spool/cron/jigga_e10# /usr/bin/crontab /var/spool/cron/jigga_e10
 
