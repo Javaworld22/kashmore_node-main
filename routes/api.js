@@ -21,4 +21,9 @@ router.get('/check-wally', function(req, res, next) {
   res.send('checkers world!');
 });
 
+/* GET test 2. */
+router.get('/check-soft', function(req, res, next) {
+  res.send('jigga byte!');
+});
+
 module.exports = router;

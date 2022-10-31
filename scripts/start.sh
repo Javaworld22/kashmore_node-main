@@ -1,6 +1,6 @@
 #! bin/bash
 
-sudo pm2 stop serve || echo "serve not running ..."
+sudo pm2 stop serve || echo "Serve script not running ..."
 
 sudo -u jigga_e10 pm2 start scripts/serve.sh
 
