@@ -20,7 +20,7 @@ steps:
   - sudo apt install -y nginx &&
   - git clone https://jiggabyte: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@github.com/JiggaByter/kashmore_node.git &&
   - cd kashmore_node &&
-  - sudo cp ./kashmore_node/configs/default /etc/nginx/sites-available/default &&
+  - sudo cp ./configs/default /etc/nginx/sites-available/default &&
   - npm install &&
   - npm install -g pm2 &&
   - pm2 start ./scripts/serve.sh &&
