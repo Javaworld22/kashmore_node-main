@@ -1,6 +1,7 @@
 # [START cloudbuild_npm_node]
 steps:
 # Install dependencies
+
 - name: gcr.io/cloud-builders/gcloud
   args:
   - compute
