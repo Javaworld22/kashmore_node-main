@@ -13,14 +13,15 @@ steps:
   - --zone
   - "us-central1-a"
   - --
+  - cd /home/jigga_e10 &&
   - sudo apt update &&
   - sudo apt install -y git &&
   - sudo apt install -y nodejs &&
   - sudo apt install -y npm &&
   - sudo apt install -y nginx &&
-  - cd ~ &&
   - sudo rm -rf kashmore_node &&
   - git clone https://jiggabyte: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@github.com/JiggaByter/kashmore_node.git &&
+  - sudo chmod -R +x kashmore_node &&
   - cd kashmore_node &&
   - sudo cp ./configs/default /etc/nginx/sites-available/default &&
   - npm install &&
