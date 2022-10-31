@@ -27,8 +27,7 @@ steps:
   - sudo cp configs/default /etc/nginx/sites-available/default &&
   - sudo npm install &&
   - sudo npm install -g pm2 &&
-  - sudo chmod +x scripts/serve.sh &&
-  - sudo chmod +x scripts/start.sh &&
+  - sudo -u jigga_e10 pm2 restart scripts/serve.sh &&
   - sudo -u jigga_e10 pm2 stop scripts/serve.sh &&
   - sudo -u jigga_e10 pm2 start scripts/serve.sh &&
   - sudo bash scripts/start.sh
