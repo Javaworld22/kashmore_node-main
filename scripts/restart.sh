@@ -4,8 +4,9 @@ responseMsg = usr/bin/wget "http://34.69.107.214/check-service";
 
 if [[$responseMsg -eq "express"]]
 then
-    echo "Working ..."
+    echo "Working ...";
 else
-    pm2 restart /home/jigga_e10/kashmore_node/scripts/serve.sh;
-    echo "Restarting ..."
+    echo "Restarting ...";
+    pm2 restart 0 && pm2 start /home/jigga_e10/kashmore_node/scripts/serve.sh;
+
 fi

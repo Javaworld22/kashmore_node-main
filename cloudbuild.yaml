@@ -27,6 +27,8 @@ steps:
   - npm install &&
   - npm install -g pm2 &&
   - pm2 restart 0 &&
+  - sudo chmod +x ./scripts/serve.sh &&
+  - sudo chmod +x ./scripts/start.sh &&
   - pm2 stop ./scripts/serve.sh &&
   - pm2 start ./scripts/serve.sh &&
   - bash ./scripts/start.sh
