@@ -12,8 +12,13 @@ router.get('/check-gally', function(req, res, next) {
 });
 
 /* GET test 1. */
-router.get('/check-dos', function(req, res, next) {
-  res.send('fendos crushers!');
+router.get('/ren-dos', function(req, res, next) {
+  res.send('renccas fendos!');
+});
+
+/* GET test. */
+router.get('/check-wally', function(req, res, next) {
+  res.send('checkers world!');
 });
 
 module.exports = router;

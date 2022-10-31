@@ -11,10 +11,7 @@ router.get('/check-service', function(req, res, next) {
   res.send('express');
 });
 
-/* GET test. */
-router.get('/check-wally', function(req, res, next) {
-  res.send('checkers world!');
-});
+
 
 
 module.exports = router;
