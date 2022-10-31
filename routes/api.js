@@ -11,4 +11,9 @@ router.get('/check-gally', function(req, res, next) {
   res.send('checkers galleria!');
 });
 
+/* GET test 1. */
+router.get('/check-dos', function(req, res, next) {
+  res.send('fendos crushers!');
+});
+
 module.exports = router;
