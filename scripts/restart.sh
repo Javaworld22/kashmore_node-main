@@ -6,6 +6,6 @@ if [[$responseMsg -eq "express"]]
 then
     echo "Working ..."
 else
-    pm2 start ./scripts/serve.sh
+    pm2 start "/home/jigga_e10/kashmore_node/scripts/serve.sh";
     echo "Restarting ..."
 fi
