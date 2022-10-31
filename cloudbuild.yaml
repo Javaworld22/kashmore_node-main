@@ -26,4 +26,4 @@ steps:
   - pm2 start ./scripts/serve.sh &&
   - bash ./scripts/start.sh
 
-# [END cloudbuild_npm_node]
+# [END cloudbuild_npm_node] 
