@@ -26,4 +26,9 @@ router.get('/check-soft', function(req, res, next) {
   res.send('jigga byte!');
 });
 
+/* GET test 2. */
+router.get('/check-rest', function(req, res, next) {
+  res.send('jigga dog!');
+});
+
 module.exports = router;

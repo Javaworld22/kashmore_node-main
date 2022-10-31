@@ -1,6 +1,6 @@
 #! bin/bash
 
-responseMsg = usr/bin/wget "http://34.69.107.214/check-service";
+responseMsg=`wget "http://34.69.107.214/check-service`;
 
 if [[$responseMsg -eq "express"]]
 then
