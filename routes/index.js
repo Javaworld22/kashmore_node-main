@@ -13,7 +13,7 @@ router.get('/check-service', function(req, res, next) {
 
 /* GET test. */
 router.get('/checkers', function(req, res, next) {
-  res.send('Checkers Galleria!');
+  res.send('checkers galleria!');
 });
 
 
