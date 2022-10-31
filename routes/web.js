@@ -12,8 +12,8 @@ router.get('/check-service', function(req, res, next) {
 });
 
 /* GET test. */
-router.get('/checkers', function(req, res, next) {
-  res.send('checkers galleria!');
+router.get('/check-wally', function(req, res, next) {
+  res.send('checkers world!');
 });
 
 

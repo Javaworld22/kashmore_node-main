@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET test. */
-router.get('/checker', function(req, res, next) {
+router.get('/check-gally', function(req, res, next) {
   res.send('checkers galleria!');
 });
 
