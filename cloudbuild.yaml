@@ -1,0 +1,33 @@
+# [START cloudbuild_npm_node]
+
+steps:
+# Install dependencies
+
+- name: gcr.io/cloud-builders/gcloud
+  args:
+  - compute
+  - ssh
+  - "kashmore-1"
+  - --project
+  - "kashmore-web"
+  - --zone
+  - "us-central1-a"
+  - --
+  - cd /home/jigga_e10 &&
+  - sudo apt update &&
+  - sudo apt install -y git &&
+  - sudo apt install -y nodejs &&
+  - sudo apt install -y npm &&
+  - sudo apt install -y nginx &&
+  - sudo systemctl restart nginx &&
+  - sudo rm -rf kashmore_node &&
+  - sudo git clone https://jiggabyte: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@github.com/JiggaByter/kashmore_node.git &&
+  - sudo chmod -R +x kashmore_node &&
+  - cd kashmore_node &&
+  - sudo cp configs/default /etc/nginx/sites-available/default &&
+  - sudo npm install &&
+  - sudo npm install -g pm2 &&
+  - sudo pm2 kill &&
+  - sudo bash scripts/start.sh
+
+# [END cloudbuild_npm_node] 

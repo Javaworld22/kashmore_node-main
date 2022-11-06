@@ -3,15 +3,28 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "start": "node ./bin/start.js"
+=======
+    "start": "node ./bin/start.js",
+    "dev": "DEBUG=kashmore-node:* npm start"
+>>>>>>> e44ebc0608b34fb7afc0a9d49648033bf5c9fb34
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+<<<<<<< HEAD
     "express": "^4.16.4",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "^3.0.2",
     "socket.io": "^4.5.3"
+=======
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.2"
+>>>>>>> e44ebc0608b34fb7afc0a9d49648033bf5c9fb34
   }
 }

@@ -7,13 +7,21 @@
 var app = require('../app');
 var debug = require('debug')('kashmore-node:server');
 var http = require('http');
+<<<<<<< HEAD
 var onSocket = require('../channel');
+=======
+require('dotenv').config();
+>>>>>>> e44ebc0608b34fb7afc0a9d49648033bf5c9fb34
 
 /**
  * Get port from environment and store in Express.
  */
 
+<<<<<<< HEAD
 var port = normalizePort(process.env.PORT || '3000');
+=======
+var port = normalizePort(process.env.PORT || '8080');
+>>>>>>> e44ebc0608b34fb7afc0a9d49648033bf5c9fb34
 app.set('port', port);
 
 /**
@@ -22,18 +30,24 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+<<<<<<< HEAD
 // create socket streams
 var io = require('socket.io')(server);
 
+=======
+>>>>>>> e44ebc0608b34fb7afc0a9d49648033bf5c9fb34
 /**
  * Listen on provided port, on all network interfaces.
  */
 
+<<<<<<< HEAD
 
  io.on('connection', onSocket);
 
 
 
+=======
+>>>>>>> e44ebc0608b34fb7afc0a9d49648033bf5c9fb34
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
